@@ -45,6 +45,10 @@ docker compose exec php composer install
 Проверка индексации URL.
 
 ---
+# SWAGGER
+
+Находиться по пути /api/doc
+---
 
 # Пример запроса
 
