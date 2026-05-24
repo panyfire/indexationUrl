@@ -46,6 +46,11 @@ docker compose exec php composer install
 
 ---
 
+# SWAGGER
+
+Находиться по пути /api/doc
+---
+
 # Пример запроса
 
 ```bash
