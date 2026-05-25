@@ -4,7 +4,7 @@ REST API сервис для проверки индексации URL чере�
 
 ---
 
-## 1. Создание .env.local
+## 1. Создание .env
 
 ```env
 XMLSTOCK_URL=api_url
@@ -44,6 +44,11 @@ docker compose exec php composer install
 
 Проверка индексации URL.
 
+---
+
+# SWAGGER
+
+Находиться по пути /api/doc
 ---
 
 # Пример запроса
