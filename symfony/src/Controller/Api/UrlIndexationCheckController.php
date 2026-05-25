@@ -3,19 +3,19 @@ declare(strict_types=1);
 
 namespace App\Controller\Api;
 
-use App\DTO\Request\IndexationRequest;
 use App\Exception\AllUrlsInvalidException;
 use App\Exception\TitleFetchException;
 use App\Exception\XmlStockClientException;
+use App\Service\Indexation\IndexationService;
+use App\Service\Indexation\Validation\Request\IndexationRequest;
+use OpenApi\Attributes as OA;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Serializer\Exception\ExceptionInterface;
 use Symfony\Component\Serializer\SerializerInterface;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
-use App\Service\Indexation\IndexationService;
-use OpenApi\Attributes as OA;
 use Throwable;
 
 class UrlIndexationCheckController extends AbstractController
