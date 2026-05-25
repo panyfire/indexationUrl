@@ -25,7 +25,6 @@ final class InUrlIndexationCheck extends AbstractIndexationCheckHandler
         $result = $this->client->fetch($query);
 
         if (array_any($result->urls, fn($url) => $url === $context['normalized'])) {
-            print_r($context);
             return UrlIndexationResult::success();
         }
 
